@@ -1,7 +1,6 @@
 import os
 import subprocess
 import time
-import textwrap
 
 _model_name = "llama3.2:1b"
 
@@ -25,8 +24,7 @@ def start():
     
     print("✅ AI Engine Ready!")
 
-def prompt(text, wrap_width=80):
-    """Sends a user prompt to the local LLM and prints formatted wrapped text."""
+def prompt(text):
     import ollama
     
     response = ollama.chat(
@@ -35,4 +33,4 @@ def prompt(text, wrap_width=80):
     )
     
     output = response['message']['content']
-    return textwrap.fill(output, width=wrap_width)
+    return output
