@@ -2,7 +2,7 @@ import os
 import subprocess
 import time
 
-_model_name = "llama3.2:1b"
+_model_name = "gemma2:2b"
 
 def start():
     """Installs dependencies, starts the server, and pulls the default model."""
