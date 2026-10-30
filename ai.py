@@ -1,6 +1,7 @@
 import os
 import subprocess
 import time
+import textwrap
 
 _model_name = "llama3.2:1b"
 
