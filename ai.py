@@ -34,4 +34,4 @@ def prompt(text, wrap_width=80):
     )
     
     output = response['message']['content']
-    return textwrap.fill(output, width=wrap_width))
+    return textwrap.fill(output, width=wrap_width)
